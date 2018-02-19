@@ -30,9 +30,10 @@ class Table extends React.Component {
         onDoubleClick={() => { this.props.openEditItem(item); }}>
         <td>
           <input
-          type="checkbox"
-          onChange={() => this.props.selectItem(item)}
-          checked={item.checked}/>
+            type="checkbox"
+            onChange={() => this.props.selectItem(item)}
+            checked={item.checked}
+          />
         </td>
         <td>{item.placa}</td>
         <td>{item.modelo}</td>
