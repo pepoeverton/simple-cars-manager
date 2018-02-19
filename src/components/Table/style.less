@@ -1,0 +1,39 @@
+@import '../../style/helpers.less';
+
+.table-default {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: @color-table-font;
+  &.pure-table {
+    border-radius: 3px;
+  }
+  thead {
+    color: inherit;
+    background-color: @background-table-header;
+    tr {
+      th {
+        font-weight: 400;
+        padding: .8em 1em;
+      }
+    }
+  }
+  tbody {
+    background-color: #FFF;
+    tr {
+      &:hover {
+        background-color: @background-table-hover;
+      }
+      a {
+        color: @color-table-link;
+        text-decoration: none;
+      }
+      td {
+        font-weight: 300;
+        padding: 1em 1em;
+      }
+    }
+  }
+  .table-empty {
+    text-align: center;
+  }
+}

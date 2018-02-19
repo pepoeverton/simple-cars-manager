@@ -1,0 +1,33 @@
+@import '../../style/helpers.less';
+
+.input-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  .input-default {
+    border: 1px solid @color-border;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    outline: none;
+    padding: .6em 1em;
+  }
+  .input-group-icon {
+    background-color: @background-container;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 .6rem;
+    color: #495057;
+    border: 1px solid @color-border;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+  }
+} 

@@ -1,0 +1,30 @@
+@import '../../style/helpers.less';
+
+.btn {
+  font-family: @font-family;
+  padding: .8em 3em;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 3px;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease;
+  border: none;
+  &.btn-default {
+    background-color: @background-btn-default !important;
+    &:hover {
+      background-color: @background-btn-default;
+    }
+  }
+  &.btn-green {
+    background-color: @background-btn-primary;
+    &:hover {
+      background-color: @background-btn-primary-hover;
+    }
+  }
+  &.btn-red {
+    background-color: @background-btn-error;
+    &:hover {
+      background-color: @background-btn-error-hover;
+    }
+  }
+}

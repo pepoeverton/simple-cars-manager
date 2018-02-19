@@ -1,0 +1,46 @@
+@import '../../style/helpers.less';
+
+.container-picture {
+  height: 180px;
+  border-radius: 4px;
+  background-color: @background-container;
+  border: 1.4px solid @color-border;
+  cursor: pointer;
+  margin-right: 15px;
+  input {
+    width: 45%;
+    position: absolute !important;
+    cursor: pointer;
+    top: 40px;
+    height: 180px;
+    opacity: 0;
+    top: 20px !important;
+  }
+  svg {
+    display: block;
+    margin: 35px auto;
+  }
+  .container-title {
+    width: 312px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    color: #FFF;
+    .title {
+      display: none;
+    }
+  }
+  &:hover {
+    .container-title {
+      background-color: rgba(0, 0, 0, 0.25);
+      .title {
+        display: block;
+      }
+    }
+  }
+  &.is-empty {
+    border: 1.4px dashed @color-border;
+  }
+}
