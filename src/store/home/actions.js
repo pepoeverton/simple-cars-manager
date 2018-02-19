@@ -60,8 +60,8 @@ export function deleteCars() {
 export function createCar(newCar) {
   return (dispatch) => {
     Car.create(newCar)
-      .then(() => {
-        dispatch({ type: CREATE_CAR, newCar });
+      .then((resp) => {
+        dispatch({ type: CREATE_CAR, newCar: { id: resp.data.id, ...newCar } });
       })
       .catch(() => {
         dispatch(receiveApiError('Erro ao criar uma carro'));
