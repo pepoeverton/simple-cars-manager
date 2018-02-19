@@ -108,10 +108,10 @@ export function receiveCarsBySearch(listCars, searchParams) {
   if (!search.length) return newListCars;
 
   newListCars = newListCars.filter((car) => {
-    const combustivel = car.combustivel.toLocaleLowerCase().trim();
+    const modelo = car.modelo.toLocaleLowerCase().trim();
     const marca = car.marca.toLocaleLowerCase().trim();
 
-    return combustivel.includes(search) || marca.includes(search);
+    return modelo.includes(search) || marca.includes(search);
   });
 
   return newListCars;
