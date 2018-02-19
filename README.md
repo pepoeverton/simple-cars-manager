@@ -1,4 +1,4 @@
-# My React App
+# Simple cars manager
 > This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ### About UI/UX
@@ -13,6 +13,10 @@
 ## Dependencies
 ```
 npm i
+```
+and 
+```
+npm i -g json-server
 ```
 
 ## Development
